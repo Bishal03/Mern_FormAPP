@@ -49,7 +49,7 @@ function SOPForm() {
     e.preventDefault();
 
     try {
-      const response = await axios.post("/api/submit", formData);
+      const response = await axios.post("mern-form-app-skux.vercel.app/api/submit", formData);
       alert(response.data.message);
       sucess()
     } catch (error) {
